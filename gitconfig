@@ -1,0 +1,9 @@
+[user]
+	name = Jan Maghuyop
+	email = jangmaghuyop@gmail.com
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+[credential]
+	helper = cache
