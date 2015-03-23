@@ -78,6 +78,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias glog="git log --graph --pretty=format:'%C(blue)%h%Creset - %C(yellow)%s%Creset %C(green)(%cr)%Creset <%aN>'"
 
 source ~/.nvm/nvm.sh
 . /home/jan/.bin/z/z.sh
