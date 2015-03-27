@@ -82,3 +82,4 @@ alias glog="git log --graph --pretty=format:'%C(blue)%h%Creset - %C(yellow)%s%Cr
 
 source ~/.nvm/nvm.sh
 . /home/jan/.bin/z/z.sh
+source ~/penv/bin/activate
