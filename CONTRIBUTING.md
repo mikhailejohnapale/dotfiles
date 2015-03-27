@@ -1,42 +1,67 @@
 # Contribution Instructions
 
-## Fork the repository
-1. Open in a new tab https://github.com/janmaghuyop/dev-env
-2. In the top-right corner of the page, click Fork.
+## 1. Fork the repository
+1. Open in a new tab https://github.com/janmaghuyop/dotfiles
+2. In the top-right corner of the page, click Fork button.
 
-## Clone the forked repository
+## 2. Clone the forked repository
 1. On GitHub, navigate to your fork.
-2. In the right sidebar of your fork's repository page, click to copy the clone URL for your fork.
-3. Open Terminal and type the command below and hit enter.
+2. In the right side of your fork's repository page, copy the clone URL.
+3. Open the terminal, copy and paste the command(s) below and hit enter.
+```
+cd ~/Downloads
+git clone git@github.com:username/dotfiles.git
+cd dotfiles
+```
+
+## 3. Set upstream URL
+Open the terminal, copy and paste the command(s) below and hit enter.
+```
+git remote add upstream git@github.com:janmaghuyop/dotfiles.git
+```
+
+## 4. Create a feature branch
+Open the terminal, copy and paste the command(s) below and hit enter.
+```
+git checkout -b branch-name
 
 ```
-git clone git@github.com:janmaghuyop/dev-env.git
+
+## 5. Make your contribution in the feature branch
+```
+echo "make your changes"
 ```
 
-## Contribute
-Open terminal and type the commands below.
+## 6. Check for changes
+Open the terminal, copy and paste the command(s) below and hit enter.
 ```
-git branch contribute-branch-name
-git checkout contribute-branch-name
-# Do your work here
-git add --all
-# see changes you've made
+# if any file(s) is added
 git status
+# changes inside the files
 git diff
-# commit if final
-git commit -m "your detailed message"
-# switch back to master if your tests pass
-git checkout master
-# update master branch with your changes
-git merge contribute-branch-name
-# send your changes to the remote repository
-git push origin master
 ```
 
-## File a pull request
+## 7. Commit your changes
+Open the terminal, copy and paste the command(s) below and hit enter.
+```
+git commit -am "contribution description"
+```
+
+## 8. Pull new commits from upstream
+Open the terminal, copy and paste the command(s) below and hit enter.
+```
+git pull upstream master
+```
+
+## 9. Push your changes to your remote repository
+Open the terminal, copy and paste the command(s) below and hit enter.
+```
+git push origin branch-name
+```
+
+## 10. Create a pull request.
 1. Navigate to your repository.
-2. press the Pull Request button.
-3. Switch to your branch.
-4. Click the Compare & review button.
-5. Review the pull request.
-6. press Create pull request button.
+2. Switch to your feature branch.
+3. Click the Compare & review button.
+4. Review the pull request.
+5. Press create pull request button.
